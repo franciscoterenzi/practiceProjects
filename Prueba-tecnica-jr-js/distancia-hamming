@@ -1,0 +1,23 @@
+//distancia de hamming 
+//tenemos dos cadenas que comparan caracter por caracter y vemos cuantos son distintos
+
+//tengo fran y tengo franchu
+
+let text1 = 'tren'
+let text2 = 'fran'
+let cont = 0
+
+//la unica condicion para que esto no funcione es que las palabras sean distintas 
+
+if (text1.length!=text2.length){
+    console.log('Las palabras no tienen la misma distancia')
+}
+else {
+    for(let i = 0; i<=text1.length;i++){
+        if (text1[i]!==text2[i]){
+            cont++
+        }
+    }
+}
+
+console.log('la distancia es de ' + cont)
