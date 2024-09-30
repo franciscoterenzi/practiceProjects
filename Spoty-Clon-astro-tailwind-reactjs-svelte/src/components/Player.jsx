@@ -34,7 +34,8 @@ export function Player () {
       useEffect(() => {
         const { song, playlist, songs } = currentMusic
         if (song) {
-          const src = `/music/${playlist?.id}/0${song.id}.mp3`
+          const src = `/music/${playlist}?.id/0${song.id}.mp3`
+          console.log(src)
           audioRef.current.src = src
           audioRef.current.play()
         }
